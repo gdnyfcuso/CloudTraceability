@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rafy.Domain.Stamp</name>
+    </assembly>
+    <members>
+        <member name="T:Rafy.Domain.Stamp.EntityStampExtension">
+            <summary>
+            此类会为所有的实体都添加一个 IsPhantom 的运行时属性。
+            </summary>
+        </member>
+        <member name="F:Rafy.Domain.Stamp.EntityStampExtension.CreatedTimeProperty">
+            <summary>
+            实体的创建时间。
+            </summary>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.GetCreatedTime(Rafy.Domain.Entity)">
+            <summary>
+            获取实体的创建时间。
+            </summary>
+            <param name="me"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.SetCreatedTime(Rafy.Domain.Entity,System.DateTime)">
+            <summary>
+            设置实体的创建时间。
+            </summary>
+            <param name="me"></param>
+            <param name="value"></param>
+        </member>
+        <member name="F:Rafy.Domain.Stamp.EntityStampExtension.UpdatedTimeProperty">
+            <summary>
+            实体的最后更新时间。
+            </summary>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.GetUpdatedTime(Rafy.Domain.Entity)">
+            <summary>
+            获取实体的最后更新时间。
+            </summary>
+            <param name="me"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.SetUpdatedTime(Rafy.Domain.Entity,System.DateTime)">
+            <summary>
+            设置实体的最后更新时间。
+            </summary>
+            <param name="me"></param>
+            <param name="value"></param>
+        </member>
+        <member name="F:Rafy.Domain.Stamp.EntityStampExtension.CreatedUserProperty">
+            <summary>
+            实体的创建用户。
+            </summary>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.GetCreatedUser(Rafy.Domain.Entity)">
+            <summary>
+            获取实体的创建用户。
+            </summary>
+            <param name="me"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.SetCreatedUser(Rafy.Domain.Entity,System.String)">
+            <summary>
+            设置实体的创建用户。
+            </summary>
+            <param name="me"></param>
+            <param name="value"></param>
+        </member>
+        <member name="F:Rafy.Domain.Stamp.EntityStampExtension.UpdatedUserProperty">
+            <summary>
+            实体的更新用户。
+            </summary>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.GetUpdatedUser(Rafy.Domain.Entity)">
+            <summary>
+            获取实体的更新用户。
+            </summary>
+            <param name="me"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.EntityStampExtension.SetUpdatedUser(Rafy.Domain.Entity,System.String)">
+            <summary>
+            设置实体的更新用户。
+            </summary>
+            <param name="me"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:Rafy.Domain.Stamp.StampPlugin">
+            <summary>
+            <para>实体的跟踪戳插件。                                                                                       </para>
+            <para>本插件为实体添加“创建时间”、“最后更新时间”、“创建人”、“最后更新人”等跟踪戳属性，并自动在数据层维护这些属性。        </para>
+            <para>使用方法：                                                                                            </para>
+            <para>1.映射实体的所有属性到数据库。                                                                          </para>
+            <para>2.在用户登录成功后，需要设置 <see cref="P:Rafy.RafyEnvironment.Principal"/> 的值。                             </para>
+            </summary>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.StampPlugin.Initialize(Rafy.ComponentModel.IApp)">
+            <summary>
+            Initializes the specified application.
+            </summary>
+            <param name="app">The application.</param>
+        </member>
+        <member name="T:Rafy.Domain.Stamp.StampSubmitInterceptor">
+            <summary>
+            拦截数据层的提交操作。在添加、更新实体时，设置实体的跟踪戳。
+            </summary>
+        </member>
+        <member name="M:Rafy.Domain.Stamp.StampSubmitInterceptor.Submit(Rafy.Domain.SubmitArgs,Rafy.Domain.ISubmitInterceptorLink)">
+            <summary>
+            提交指定的实体，并在添加、更新实体时，设置实体的跟踪戳。
+            </summary>
+            <param name="e">The e.</param>
+            <param name="link">The link.</param>
+        </member>
+    </members>
+</doc>

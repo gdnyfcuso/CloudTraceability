@@ -1,0 +1,222 @@
+﻿{
+  /*简税,1为开启日志记录，0为关闭日志记录*/
+  "WriteLog": "1",
+  /*电子发票,1为开启日志记录，0为关闭日志记录*/
+  "EIWriteLog": "1",
+  /*简税,是否开始数据库初始化*/
+  "CloudTraceability.AutoUpdateDb": "true",
+  /*电子发票,是否开始数据库初始化*/
+  "EISaaS.AutoUpdateDb": "false",
+  /*VICA地址*/
+  "VICAURI": "http://139.219.231.203:5000",
+  /*简税地址*/
+  "CnetaxUrl": "http://sandbox.cnetax.com",
+
+  "WeChatCnetaxUrl": "http://sandboxcnetaxmobile.cnetax.com",
+  /*电子发票地址*/ 
+  "EIUrl": "http://sandboxei.cnetax.com",
+  /*扫码开票,电子发票微信端地址*/
+  "WechartEIUrl": "http://eiapp.cnetax.com",
+  /*旧简程地址*/
+  "EscardUri": "http://sandboxescard.cnetax.com",
+
+  "manageUrl": "http://sandboxcnetaxmange.cnetax.com",
+
+  "efapaoWechartUrl": "https://www.efpgj.com/wx_fpgj/getOpenID.html?backurl=",
+
+  /*发票查验*/
+  "InvoiceCheckUrl": "https://vatic.dbgo.cn",
+  "InvoiceCheckKey": "DBEN.JSCYMH",
+  "InvoiceCheckSecret": "5b2b5601925a40aa9020d86420cfb132",
+  "CertificatePemPath": "~/Certificate/checkinvoice_rsa_private_key.pem",
+  "InvoiceCheckPemKey": "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAKmEen06ShYlhF+f8dIDd25ACRiMytHetbfjVh7XKidCXJ/7HZOikqdK0b8KNOTBm/GfIXUUvu4r5B4DSPaSjStRON2O5otrzRPYFh6XxIJ7LpHVCweyNuKwr7/MMYG44hheWCec2UzigKUAuVaUeru0P91u6ZQcuN0PxL+ki3tzAgMBAAECgYEAolxCvYKAxylz2erlwFKVp0Ep9RuUfuKihdf1+l/2/dcvxALOV0MU16pvrlxmQNu3MvtJHkyaeqALQzu+PHwtPEm+H9/x+w62k3owIYNAHwe8qHj4WBCXFxKP0BK3qcfW9XXD0bYEJc06p3QzGA02P25ZdnT4FsZvuSncuHZ+kEECQQDg1j3pSO3kNBM9KCSFJjlyhonSITkcvRStgjrKpmEBIJXbUSIhGYgt9rnBMmIg4a/ZeN9qE03CnKk+y7UTMcCRAkEAwQNe2W2Tekukkb8mbG8UuZ5dW2tEUqzkVKsdY3VUtgYNz2CuxP9Vs8+ZcMRub0gcvqxyZdfZoNwh9nx6YC99wwJADU3gH/vGx+gk80t6zb4zTAmWAi8hGAhAPvwjynYJ620oMPAeGuNN4Zpl5365u8RfCXlTjw1RXqCyixq2vkoFYQJBAILZ1B23ibnpOkKMwnHUxMoqMMRfbkxWZd14vE3HJ4zXgdlLhHCNYf6rCS1IHk5XJxWlN1EQCrxhQK0oKpa2250CQQCrvrP/5fPfRDZVSB1oi11PqJUZbOQAwxgp99lhPSSK4ZQmfYndIY2cnwo0uLI92SIU4Kaioz+C6O6eYUrqUq0x",
+
+  "UseRedis": "false",
+  "RedisUri": "139.219.197.244",
+  "RedisPort": "6379",
+  "RedisPassword": "1qaz2wsx",
+  "AzureRedisConfig": "sandboxcnetax.redis.cache.chinacloudapi.cn:6380,password=ijh/rsZENLz6xZxchPpnhjMqvkOrpLKnbXl468/lY1E=,ssl=True,abortConnect=False",
+
+  "FolderPath": "App_Data",
+  "MaxInvoiceDetailRow": "8",
+  "MaxAllowInvoiceDetailRow": "20",
+  "ListDetailCount": "100",
+  /*签章后的PDF存放路径*/
+  "PDFSavePath": "D://PDF/",
+  /*证书序列号（正式）*/
+  "SerialNumber": "4002804850",
+  /*证书密码（正式）*/
+  "CertificatePassword": "111111",
+  /*证书存放路径（正式）*/
+  "CertificatePath": "~/Certificate/daben.pfx",
+  /*通用请求地址（正式）*/
+  "CFCAUrl": "https://cs.anxinsign.com/FEP/platId/413ACE924F272C3FE0538D02030A388B",
+  "CAUrl": "http://121.42.142.146:8080",
+
+  /*是否同步Escard发票*/
+  "InformEscardUserInvInfo": "false",
+
+  /*是否对接简程1表示对接*/
+  "IsThirdESCard": "1",
+  "ESCardBaseUrl": "http://api.efpgj.com",
+  "UserNameHeaderKey": "DBISaaS-UserName",
+  "UserNameHeaderVal": "Jane",
+  "PasswordHeaderKey": "DBISaaS-Password",
+  "PasswordHeaderVal": "q3@5*5d~e^",
+  "WeChatAppId": "wxb020d64aaa628eab",
+  "WeChatAppSecret": "",
+  "AliPayAppId": "2016072800111958",
+  "AliPayAppSecret": "",
+
+  "IsGateWay": "0",
+  "GateWayApiUrl": "http://sandboxcnetaxgateway.chinacloudsites.cn",
+  "GateWayUserNameKey": "GateWay-UserName",
+  "GateWayUserNameVal": "GateWay",
+  "GateWayPasswordKey": "GateWay-Password",
+  "GateWayPasswordVal": "GateWay",
+
+  /*邮件发送帐号*/
+  "Mail.Account": "cnetax@dbgo.cn",
+  /*邮件发送密码*/
+  "Mail.Password": "cnetax123",
+  /*邮件发送服务器地址*/
+  "Mail.Host": "smtp.qiye.163.com",
+  /*邮件发送服务器端口号*/
+  "Mail.Port": "25",
+
+  /*短信通道*/
+  "SMS.PostUrl": "http://222.73.117.158/msg/HttpBatchSendSM",
+  /*短信通道帐号*/
+  "SMS.Account": "JShui888",
+  /*短信通道密码*/
+  "SMS.Password": "Tch950817",
+  /*注册短信验证模板*/
+  "SMS.Regist.Format": "您好，您的验证码是{0}",
+
+  /*微信发消息模板配置*/
+  "Wechart.TemplateId": "thD2jlHtP_liR_YxfCrnj1z9GY0JsF8EGiiKGyLgBPQ",
+  "Wechart.TemplateTitle": "您好，您的发票已开具成功！",
+  /*微信发消息模板配置-代理记账报税*/
+  "WeChat.TaxTemplateId": "c_rSXs01if11T4ZRM5xZ8YRE60SGJ5y1S1MHhSM9QKY",
+
+  /*支付宝应用ID 2016081501752327*/
+  "AliPay.APPID": "2016072800111958",
+  /*支付宝授权页面*/
+  "AliPay.OAuth": "https://openauth.alipaydev.com/oauth2/publicAppAuthorize.htm",
+  /*支付宝网关*/
+  "AliPay.ServerUrl": "https://openapi.alipaydev.com/gateway.do",
+
+  "WeChat.AppID": "wxeeb6cb682ea4afb5",
+  "WeChat.AppSecret": "4a1818c218619f04adb4595d904d6ce2",
+  "WeChat.MchID": "1458027302",
+  "WeChat.Key": "1234567890123456abcdefghigklmnoP",
+  "WeChat.Url": "https://open.weixin.qq.com",
+  "WeChat.Api": "https://api.weixin.qq.com",
+
+  /*钉钉授权地址*/
+  "DingTalk.Oauth": "http://116.62.108.63/fpgj_dd/invhead.html",
+  /*钉钉推送发票接口*/
+  "DingTalk.Url": "http://api.efpgj.com/fpgj/ddfpgj/pushInvoice",
+
+  "StorageAccount": "eistorage",
+  "StorageKey": "/VezzQ4HNR5WAKsxg+OniXTqx55eZdjKRhR1WGzE9ZyiykzPWvNJOo8TUcpk0a5Nag0YG3opcpz8pi3kqsZnKA==",
+  "BlobUri": "https://eistorage.blob.core.chinacloudapi.cn",
+  "AzureConn": "Endpoint=sb://sandboxcnetax.servicebus.chinacloudapi.cn/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=U8PmM/7cdSIm06YdnFefBTKRP/a8J1S4sEYFwtd99qc=",
+  "BillingScanErrorCount": "5",
+  "BillingScanReCallTime": "30",
+
+  /*taxhoo,艾特密接口配置*/
+  "TaxhooHost": "http://api.atme8.com",
+  "TaxhooAccessKey": "MDaHORin",
+  "TaxhooAccessKeySecret": "Mxmjgfz8QTatCbl8",
+
+  /*发票管家信息配置*/
+  "EfpgjAppId": "wxb020d64aaa628eab",
+  "EfpgjSecurity": "dd9f1c3e60a6d0d54e5ee6d94a7ed1c7",
+  "WechartBaseUrl": "https://api.weixin.qq.com",
+  "WechartCardLogUrl": "http://mmbiz.qpic.cn/mmbiz_jpg/nWJjLaEXH2xdIlZiazf16Ex0Q27usPqib1S6SX2icWJkGM7yPKzABTRoEHr4s5jDWR7mRlU66iapBJh3icicU4NuZmTw/0",
+  "TenantAmount": "1",
+  "WechartTokenUrl": "http://api.efpgj.com/fpgj/weixin/getToken",
+
+  /*MongoDB连接配置*/
+  "mongoConnStr": "mongodb://cnetaxsandbox:ANTEIZQKRLnDvWrcoddQsHlfmJLaO3ClI1wcF20BJwOOrUYBukylkJg3Mry0r4nrXWgW7zxyL0YBarD1XseGMQ==@cnetaxsandbox.documents.azure.cn:10250/?ssl=true&sslverifycertificate=false",
+  "mongoDbName": "InvoiceDataCenter",
+
+  "mongoConnStrLog": "mongodb://139.219.185.47:27017",
+  "mongoDbNameLog": "SandboxVICA",
+  "mongoLogUser": "sandbox_vica_db",
+  "mongoLogPwd": "vica$1234",
+
+  "QRCodeValidTime": "720",
+
+  /*订单有效期（天）*/
+  "validDay": "3",
+
+  /*是否测试支付开关*/
+  "isTestPay": "1",
+  /*微信电子发票扫描二维码*/
+  "WechatCGIBaseUrl": "https://api.weixin.qq.com/cgi-bin",
+  "WeChatScanTitle": "https://api.weixin.qq.com/card/invoice/scantitle",
+  /*航信在线名片扫码解析*/
+  "HXGetInfo": "http://weixin.jss.com.cn/WeiXinServer/qiyemingpianNew/getKpinfoNew.action",
+
+  /*测试版，微信accesstoken*/
+  "WechartToken": "TEST_WECHART_TOKEN",
+  /*测试版，微信ticket*/
+  "WechartTicket": "TEST_WECHART_TICKET",
+  /*测试版，微信token到redis*/
+  "WechartTokenRedis": "TEST_WX_TOKEN_REDIS",
+  //vica异步服务地址
+  "AsyncVicaServiceUrl": "http://139.219.231.203:7070",
+  //Hema是否审核租户
+  "IsShExtStatus": "0",
+
+  //大象慧云接口
+  "DXHYCustomerUrl": "https://wdfp.5ifapiao.com/myinvoice-invoice-card/card/fuzzyQuery",
+  //信用中国接口
+  "XYZGCustomerUrl": "http://www.creditchina.gov.cn/api/public_search/getCreditCodeFacade",
+  //诺诺接口
+  "NuoNuoCustomerUrl": "http://weixin.jss.com.cn/WeiXinServer/qiyemingpian/selectQiYeMingPian.action",
+
+  //合码服务器地址http://oapi.test1.hemayun.cn测试;https://oapi.hemayun.cn生产
+  "HemaHostUrl": "http://oapi.test1.hemayun.cn",
+  //合码绑定门店接口
+  "HemaTerminalsApiUrl": "/v1/invoices/terminals/dabenpc",
+  //收钱吧服务器地址
+  "SQBHostUrl": "http://oapi.test1.hemayun.cn",
+  //收钱吧绑定门店接口
+  "SQBTerminalsApiUrl": "/v1/invoices/terminals/sqbpc",
+
+  //索引服务器
+  "ElasticSearchNodeStr": "http://139.219.224.217:9200",
+
+  //发票获取和认证
+  "fpdk": "http://fpdk.dbgo.cn/",
+
+  "XsyBenPosUrl": "http://121.42.165.24/benpos_test",
+  //开票员Mapping默认Key
+  "MobileBillingKey": "mobilenum",
+  //开票员默认个数
+  "DefaultMobileNum": "5",
+  //同步支付宝 商户简码
+  "Default_m_short_name": "BEST_WONDER",
+  //同步支付宝 门店简码
+  "Default_sub_m_short_name": "BEST_WONDER",
+
+  /*VICA地址*/
+  "VICASYNCLINEURI": "http://101.132.66.14:10002",
+
+  /*选购产品分组号*/
+  "productGroupCode": "A01",
+  /*产品-电子发票-基础版发票套餐默认张数*/
+  "productPackageNumber": "1500",
+  /*产品-电子发票-基础版发票套餐默认单价*/
+  "productPackagePrice": "128",
+  /*是Azure服务器还是NFS服务器*/
+  "isAzure": "true",
+
+  "RabbitMqHost": "127.0.0.1",
+  "RabbitMqUsername": "dbi_saas",
+  "RabbitMqPassword": "6jrT0juGEyLSAb7u"
+
+}
