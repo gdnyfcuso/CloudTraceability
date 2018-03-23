@@ -17,12 +17,12 @@ namespace CloudTraceability.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/bootstrap-4.0.0/dist/js/bootstrap.min.js",
+                      "~/Scripts/respond.js", "~/Scripts/bootstrap-4.0.0/assets/js/vendor/popper.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Scripts/bootstrap-4.0.0/dist/css/bootstrap.min.css"));
         }
     }
 }
