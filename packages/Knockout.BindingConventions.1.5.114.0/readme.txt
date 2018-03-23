@@ -1,1 +1,0 @@
-Please see https://github.com/AndersMalmgren/Knockout.BindingConventions/wiki for more information on using this lib.
